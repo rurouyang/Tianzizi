@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@media (max-width: 1300px){
+    .bg_showing{ margin-top: 7rem; }
+    .showing_box img{ width: 80px; height: 80px; }
+    .showing_box h3{ font-size: 1.5rem; }
+    .bg_line{ margin: 84px auto; }
+    .bg_btn{ width: 168px; height: 30px; }
+    .bg_btn a{ font-size: 15px; line-height: 30px; padding: 0 50px; }
+    .brand_inner .row-brand{ height: 654px; }
+    #product .product_inner{ height: 1400px; }
+    .product_mask{ height: 1400px; }
+}
+@media (max-width: 1250px){
+    .brand_inner .row-brand{ height: 628px; }
+    .col-2-group .brand_title h2{ font-size: 2.5rem; }
+    .col-2-group .brand_title p{ font-size: 15px; line-height: 28px; }
+    .service_title h2{ font-size: 2.5rem; }
+    .service_row .sweet-col-4-1{ width: 130px; margin: 0 25px; }
+    .service_row .sweet-col-4-1 h3{ font-size: 2.5rem; }
+    .product_title h2{ font-size: 2.5rem; }
+    #product .product_inner{ height: 1310px; }
+    .product_mask{ height: 1310px; }
+}
+@media (max-width: 1100px){
+    .bg_showing{ margin-top: 4rem; }
+    .header_inner{ height: 720px; } 
+    .brand_inner .row-brand{ height: 560px; }
+    .row-brand .col-2-group{ margin-left: 9px; }
+    .col-2-group .brand_title .title{ height: 378px; overflow: hidden; margin: 0; }
+    .col-2-group .brand_title{ padding: 34px; }
+    .col-2-group .brand_title h2{ margin: 10px auto; }
+    #product .product_inner{ height: 1266px; }
+    .product_mask{ height: 1266px; }
+} 
+@media (max-width: 1024px){
+    .header_inner{ height: 742px; }
+    .brand_inner .row-brand{ height: 524px; }
+    .col-2-group .brand_title{ padding: 35px; }
+    .col-2-group .brand_title h2{ font-size: 2rem; }
+    .col-2-group .brand_title .title{ height: 334px; }
+    .service_title h2{ font-size: 2rem; }
+    .service_row .sweet-col-4-1 h3{ font-size: 2rem; }
+    .row-brand .col-1 .col-txt{ font-size: 1.8rem; }
+    .product_title h2{ font-size: 2rem; }
+    .col-2-1 .biscuit .biscuit-txt, .col-2-1 .cake .cake-txt{ font-size: 1.8rem; }
+    .product_row .col-6-1 .cake_title{ height: 134px; padding: 36px 16px; }
+    .product_row .col-6-1 .cake_title h4{ font-size: 20px; }
+    .product_row .col-6-1 .cake_title p{ font-size: 12px; }
+    .product_row .col-6-1 .cake_title h5{ font-size: 18px; }
+    #product .product_inner{ height: 1230px; }
+    .product_mask{ height: 1230px; }
+}
+@media (max-width: 900px){ 
+    .title_line{ width: 200px; }
+    .service_row .sweet-col-4-1{ width: 100px; }
+    .service_inner{ padding: 75px 0; }
+    #product .product_inner{ height: 1078px; }
+    .product_mask{ height: 1078px; }
+}
+@media (max-width: 850px){ 
+    nav .nav_info{ display: none; }
+}
+@media (max-width: 768px){
+
+    nav .hamburger{ display: flex; margin-right: 32px; cursor: pointer;}
+    .hamburger.open .t1{ transform: translate(0,0) rotate(45deg); transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .hamburger.open .t2{ transform: translate(0,-6px) rotate(-45deg); transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    nav .nav_menu{ background-color: #D27575; height: calc(100vh - 530px); width: 100%; position: absolute; top: 80px; left: 0; z-index: 100; margin-left: 0; opacity: 0; visibility: hidden; transform: scaleY(0) ; transition: .5s; }
+    nav .nav_menu ul{ margin-top: 7rem; }
+    nav .nav_menu li{ height: 80px; display: flex; justify-content: center; align-content: space-around; float: none; margin-right: 0; }
+    .nav_menu li a{ display: block; color: #fff; text-transform: uppercase; font-size: 50px; text-align: center; }
+    #menu_switcher:checked ~ .nav_menu{ transform: scaleY(1); transform-origin: 0 0; opacity: 1; visibility: visible; transition: all .5s ease; }
+    .brand_inner .row-brand{ flex-direction: column; }
+    .row-brand .col-1{ width: 100%; order: 1; }
+    .row-brand .col-2-group{ width: 100%; }
+    .service_inner{ padding: 90px 20px; }
+    .service_row .sweet-col-4-1{ margin: 0 15px; }
+    #product .product_inner{ height: 1930px; }
+    .product_mask{ height: 1930px; }
+    .product_row{ width: 90%;margin: auto; }
+    .product_row .col-6-1{ width: 50%; padding: 30px 10px; }
+    .product_row .col-6-1 .cake_title{ height: auto; }
+    .product_row .col-6-1 .cake_title p{ padding-bottom: 5px; }
+    .footer .footer_inner{ height: 182px; }
+    .footer_inner .footer_group{ display: flex; flex-direction: column; position: static; margin: 30px 14px 18px 28px; }
+    .footer_box{ flex-direction: column; top: 34px; right: 36px; }
+    .footer_box .logo{ margin-bottom: 12px; padding-right: 10px; }
+    .footer_box .logo img{ width: 80px; height: 80px; }
+    .footer_box a{ padding-right: 14px; }
+    .footer_box a h3{ font-size: 14px; letter-spacing: 1px; }
+    .footer_group .footer_title{ margin: 0; border-right: none; }
+
+}
+@media (max-width: 502px){}
+@media (max-width: 375px){}

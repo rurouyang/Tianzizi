@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Tianzizi</title>
+     <!-- normalize為重置css 放最上面 -->
+     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+     <!-- slick css -->
+     <link rel="stylesheet" href="./css/slick.css">
+     <link rel="stylesheet" href="./css/slick-theme.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!-- icon css -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+     <!-- 自訂css 權重必須最重 故放置最下 -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/reponsive.css">
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- navbar與畫布區 -->
+        <header class="header">
+            <div class="header_inner">
+                <!-- navbar區 -->
+                <nav class="navbar">
+                    <input type="checkbox" name="menu_switcher" id="menu_switcher">
+                    <div class="nav_logo"><img src="./images/tianzizi-01.svg" alt=""></div>
+                    <label for="menu_switcher" class="hamburger">
+                        <span class="t t1"></span>
+                        <span class="t t2"></span>
+                    </label>
+                    <div class="nav_menu">
+                        <ul style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                            <li><a class="nav_border" href="#brand">BRAND</a></li>
+                            <li><a class="nav_border" href="#service">SERVICE</a></li>
+                            <li><a class="nav_border" href="#product">PRODUCT</a></li>
+                            <li><a class="nav_border" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_info"><h5>ONLINE STORE</h5></div>
+                </nav>
+                 <!-- 主畫布區 -->
+                 <div class="bg_showing">
+                     <div class="showing_box">
+                        <img src="./images/tianzizi-01.svg" alt="">
+                        <h3>CHEESE CREAM & SUGAR<br>SWEET BERRY</h3>
+                     </div>
+                     <div class="bg_line"></div>
+                     <div class="bg_btn">
+                        <a href="">Read more</a>
+                        <div class="btneffect"></div>
+                     </div>
+                    </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="main_inner">
+                <section id="brand">
+                    <div class="brand_inner">
+                        <div class="row-brand">
+                            <div class="col-1">
+                                <div class="col-txt">TAILET</div>
+                            </div>
+                            <div class="col-2-group">
+                                <div class="col-2-1 brand_title">
+                                    <div class="title">
+                                        <div class="txt_box"><img src="./images/line.png" alt=""></div>
+                                        <h2>BRAND</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum nihil dolores debitis ducimus similique qui esse dolorem iusto a, odio distinctio dolor repellendus minima! Placeat eum eaque doloremque tempore.</p>
+                                    </div>
+                                </div>
+                                <div class="col-2-1 brand_img">
+                                    <div class="biscuit">
+                                        <div class="biscuit-txt">BISCUIT</div>
+                                    </div>
+                                    <div class="cake">
+                                        <div class="cake-txt">CAKE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="service">
+                    <div class="service_inner">
+                        <div class="service_title">
+                            <div class="title_line"><img src="./images/line.png" alt=""></div>
+                            <h2>SERVICE</h2>
+                        </div>
+                        <div class="service_row">
+                            <div class="sweet-col-4-1">
+                                <img src="./images/icon-05.png" alt="">
+                                <h3>Cake</h3>
+                            </div>
+                            <div class="sweet-col-4-1">
+                                <img src="./images/icon-06.png" alt="">
+                                <h3>Tailet</h3>
+                            </div>
+                            <div class="sweet-col-4-1">
+                                <img src="./images/icon-07.png" alt="">
+                                <h3>Quiche</h3>
+                            </div>
+                            <div class="sweet-col-4-1">
+                                <img src="./images/icon-08.png" alt="">
+                                <h3>Biscuit</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <stction id="product">
+                    <div class="product_inner">
+                        <div class="product_mask">
+                            <div class="product_title">
+                                <div class="title_line"><img src="./images/line.png" alt=""></div>
+                                <h2>PRODUCT</h2>
+                            </div>
+                            <div class="product_row">
+                                <div class="col-6-1 smoove" data-move-x="0px" data-move-y="100px">
+                                    <img src="./images/img-09.jpg" alt="">
+                                    <div class="cake_title">
+                                        <h4>經典燕麥巧克力</h4>
+                                        <p>Oatmeal chocolate</p>
+                                        <h5>NT$55/片</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6-1 smoove" data-move-x="0px" data-move-y="100px">
+                                    <img src="./images/img-10.jpg" alt="">
+                                    <div class="cake_title">
+                                        <h4>布魯賽爾蛋糕</h4>
+                                        <p>Brussels cake</p>
+                                        <h5>NT$80/片</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6-1 smoove" data-move-x="0px" data-move-y="100px">
+                                    <img src="./images/img-11.jpg" alt="">
+                                    <div class="cake_title">
+                                        <h4>橙香葡萄小蛋糕</h4>
+                                        <p>Orange raisin</p>
+                                        <h5>NT$85/個</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6-1 smoove" data-move-x="0px" data-move-y="100px">
+                                    <img src="./images/img-12.jpg" alt="">
+                                    <div class="cake_title">
+                                        <h4>德式火腿鹹派</h4>
+                                        <p>German quiche</p>
+                                        <h5>NT$950</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6-1 smoove" data-move-x="0px" data-move-y="100px">
+                                    <img src="./images/img-13.jpg" alt="">
+                                    <div class="cake_title">
+                                        <h4>莓好重乳酪</h4>
+                                        <p>Berry cheese</p>
+                                        <h5>NT$950</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6-1 smoove" data-move-x="0px" data-move-y="100px">
+                                    <img src="./images/img-14.jpg" alt="">
+                                    <div class="cake_title">
+                                        <h4>手工檸檬蛋糕塔</h4>
+                                        <p>Lemon cake</p>
+                                        <h5>NT$850</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </stction>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_copyright"><small>© TAINZIZI. All Rights Reserved.</small></div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery原生碼 CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- smoove js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+
+    <!-- smoove選項 -->
+    <script>
+        $('.smoove').smoove({
+
+            offset: '65%',
+            moveX: '0px',
+            moveY: '100px'
+        });
+
+        const menuIcons = document.querySelectorAll('.hamburger')
+        let isMenuOpen = false;
+        menuIcons.forEach((icon)=>{
+            icon.addEventListener('click',()=>{
+            isMenuOpen = !isMenuOpen
+            isMenuOpen ? icon.classList.add('open') : icon.classList.remove('open')
+        })
+        })
+
+    </script>
+
+
+</body>
+</html>
