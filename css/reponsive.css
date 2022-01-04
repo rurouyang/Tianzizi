@@ -147,8 +147,9 @@
     .bg_showing img{ width: 60px; height: 60px; }
     .bg_line{ width: 60px; margin: 38px auto; }
     .bg_btn{ width: 136px; height: 24px; margin: 46px auto; }
-    .bg_btn a{ font-size: 12px; line-height: 12px; padding: 0 40px; }
+    .bg_btn a{ font-size: 13px; line-height: 13px; padding: 0 40px; }
     .bg_btn .btneffect{ width: 130px; height: 24px; }
+    .service_row .sweet-col-4-1 h3{ margin-left: 8px; }
     .product_row .col-6-1 .cake_title{ padding: 26px 16px; }
     .product_row .col-6-1 .cake_title h4{ font-size: 16px; }
     .product_row .col-6-1 .cake_title h5{ font-size: 16px; }
