@@ -79,6 +79,7 @@
     .showing_box h3{ font-size: 3rem; line-height: 4rem; }
     .bg_line{ width: 100px; margin: 60px auto; }
     .bg_btn{ margin: 73px auto; }
+    .bg_btn a{ font-size: 14px; }
     #menu_switcher:checked ~ .nav_menu{ transform: scaleY(1); transform-origin: 0 0; opacity: 1; visibility: visible; transition: all .5s ease; }
 
     .brand{ height: 100%; }
@@ -94,7 +95,7 @@
     .brand_inner .row-brand .col-2-group .biscuit{ position: static; background-image: none; margin: auto; opacity: 1; }
     .brand_inner .row-brand .col-2-group .cake{ position: static; background-image: none; opacity: 1; }
     .col-2-1 .biscuit .biscuit-txt{ position: absolute; top: 42%; right: 25%; opacity: 1; font-size: 2rem; }
-    .col-2-1 .cake .cake-txt{ position: absolute; top: 42%; left: 24%; opacity: 1; font-size: 2rem; }
+    .col-2-1 .cake .cake-txt{ position: absolute; top: 40%; left: 24%; opacity: 1; font-size: 2rem; }
     .brand_inner .row-brand .col-2-group .brand_img img{ display: block; width: 100%; height: 100%; }
     .brand_inner .row-brand .col-2-group .brand_title .title .txt_box{ width: 300px; margin: auto; }
     .col-2-group .brand_title h2{ font-size: 4rem; margin: 10px auto 1rem; }
