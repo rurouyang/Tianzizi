@@ -62,7 +62,6 @@
     nav .nav_info{ display: none; }
 }
 @media (max-width: 768px){
-
     .header{ position: relative; }
     .header .header_inner{ position: absolute; background-image: none;  }
     .header .bg_img{ display: block; }
@@ -122,10 +121,8 @@
     .footer_box a{ padding-right: 14px; }
     .footer_box a h3{ font-size: 14px; letter-spacing: 1px; }
     .footer_group .footer_title{ margin: 0; border-right: none; }
-
 }
 @media (max-width: 502px){
-
     .nav_logo{ margin-left: 45px; }
     nav .hamburger{ margin-right: 50px; }
     .bg_showing{ margin-top: 5rem; }
@@ -145,10 +142,8 @@
     #product .product_inner{ height: 1630px; }
     .product_mask{ height: 1630px; }
     .footer .footer_inner{ height: 130px; }
-
 }
 @media (max-width: 425px){
-
     .bg_showing img{ width: 60px; height: 60px; }
     .bg_line{ width: 60px; margin: 38px auto; }
     .bg_btn{ width: 136px; height: 24px; margin: 46px auto; }
@@ -158,15 +153,11 @@
     .product_row .col-6-1 .cake_title h4{ font-size: 16px; }
     .product_row .col-6-1 .cake_title h5{ font-size: 16px; }
     #product .product_inner{ height: 1400px; }
-    .product_mask{ height: 1400px; }
-    
-
+    .product_mask{ height: 1400px; }  
 }
 @media (max-width: 375px){
-
     .product_mask .product_title{ padding-top: 80px; }
     #product .product_inner{ height: 1300px; }
     .product_mask{ height: 1300px; }
     .product_title h2{ margin: 1rem auto; }
-
 }

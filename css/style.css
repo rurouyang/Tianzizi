@@ -7,343 +7,93 @@
 @font-face{
     font-family: 'Amiri-Regular';
     src: url('../fonts/Amiri-Regular.ttf')format("truetype");
-}
 
-* {
-    margin: 0;
-    padding: 0;/* 取消所有元素預設的內外距 */
-    box-sizing: border-box; /* 不累加邊框與內距 */
 }
-html,body{
-    font-family: 'Amiri-Regular',Helvetica,Arial,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
-}
-img{
-    width: 100%; /* 自適應網頁大小 */
-    display: block;/* 取消inline-block預設間距 */
-}
-a{
-    text-decoration: none;
-}
-ol, ul{
-    padding-left: 0;
-}
-li{
-    list-style-type: none;
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 0;
-}
-.header{
-    position: relative;
-    width: 100%;
-}
-.header_inner{
-    width: 100%;
-    height: 780px;
-    background-image: url('../images/p-305-rob7820-jj.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-}
-.header .bg_img{ display: none; }
-header .navbar{
-    width: 100%;
-    height: 80px;
-    line-height: 8px;
-    background-color: rgb(0, 0, 0,0.5);
-}
+/* reset */
+* { margin: 0;  padding: 0; box-sizing: border-box; }
+html,body{ font-family: 'Amiri-Regular',Helvetica,Arial,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif; }
+img{  width: 100%; display: block; }
+a{ text-decoration: none; }
+ol, ul{  padding-left: 0; }
+li{ list-style-type: none; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p { margin-bottom: 0; }
+
+
+.header{ position: relative; width: 100%; }
+.header_inner{ width: 100%;  height: 780px; background-image: url('../images/p-305-rob7820-jj.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: 50% 25%; }
+header .navbar{ width: 100%; height: 80px; line-height: 8px; background-color: rgb(0, 0, 0,0.5); }
 #menu_switcher{ display: none; }
-nav .nav_menu{
-    float: left;
-    margin-left: 48px;
-}
-.nav_logo{
-    width: 60px;
-    height: 60px;
-    margin-top: 6px;
-    margin-left: 60px;
-}
-nav .nav_menu ul{
-    width: 100%;
-}
-nav .nav_menu  li{
-    display: block;
-    float: left;
-    margin-right: 48px;
-}
-.nav_menu li a{
-    font-size: 1rem;
-    color: #fff;
-}
-.nav_menu li:hover a{
-    color: blanchedalmond;
-    transition: all 0.3s;
-}
-nav .nav_info h5{
-    font-size: 1rem;
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    letter-spacing: 1px;
-    margin-right: 60px;
-}
-.hamburger{ display: none; align-items: center; justify-content: center; flex-direction: column; height: 20px; }
-.hamburger .t{ position: relative; width: 20px; height: 2px; margin: 0 auto; overflow: hidden; transform-origin: center center; }
-.hamburger .t:before, .hamburger .t:after{ content: ''; position:absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background: #fff; transition: all .5s .1s cubic-bezier(.19,1,.22,1); }
-.hamburger .t2{ margin-top: 4px; }
+nav .nav_menu{ float: left; margin-left: 48px; }
+nav .nav_logo{ width: 60px; height: 60px; margin-top: 6px; margin-left: 60px; }
+nav .nav_menu ul{ width: 100%; }
+nav .nav_menu  li{ display: block; float: left; margin-right: 48px; }
+nav .nav_menu li a{ font-size: 1rem; color: #fff; }
+nav .nav_menu li:hover a{ color: blanchedalmond; transition: all 0.3s; }
+nav .nav_info h5{ font-size: 1rem; color: #fff; border-bottom: 1px solid #fff; letter-spacing: 1px; margin-right: 60px; }
+nav .hamburger{ display: none; align-items: center; justify-content: center; flex-direction: column; height: 20px; }
+nav .hamburger .t{ position: relative; width: 20px; height: 2px; margin: 0 auto; overflow: hidden; transform-origin: center center; }
+nav .hamburger .t:before, .hamburger .t:after{ content: ''; position:absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background: #fff; transition: all .5s .1s cubic-bezier(.19,1,.22,1); }
+nav .hamburger .t2{ margin-top: 4px; }
 .bg_showing{ height: auto; margin-top: 8rem; }
-.showing_box{
-    width: 100%;
-    margin: auto;
-}
-.showing_box img{
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-.showing_box h3{
-    color: #fff;
-    text-align: center;
-}
-.bg_line{
-    width: 150px;
-    border-bottom: 1px solid #fff;
-    transform: rotate(90deg);
-    margin: 100px auto;
-}
-.bg_btn{
-    position: relative;
-    border-radius: 20px;
-    border: 1px solid #fff;
-    width: 180px;
-    height: 35px;
-    margin: 105px auto;
-    overflow: hidden;
-}
-.bg_btn .btneffect{
-    width: 178px;
-    height: 34px;
-    border-radius: 5px;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%);
-    transition: .3s;
-}
-.bg_btn:hover .btneffect{
-    transform: translate(0%);
-}
-.bg_btn a{ /* btn的文字設position是因為btnffect也有position會壓在文字上，故同時設定文字權重才會比色塊重 */
-    position: relative;
-    color: #fff;
-    line-height: 35px;
-    padding: 0 54px;
-}
-.bg_btn:hover a{
-    color: rgb(202, 163, 105);
-    z-index: 999;
-}
-.main{
-    width: 100%;
-}
-.main .brand{
-    width: 100%;
-}
-.brand_inner .row-brand{
-    width: 100%;
-    height: 713px;
-    display: flex;
-    padding: 48px;
-}
-.row-brand .col-1{
-    position: relative;
-    width: 50%;
-    opacity: 1;
-    overflow: hidden;
-}
+.showing_box{ width: 100%; margin: auto; }
+.showing_box img{ width: 100px; height: 100px; margin: auto; }
+.showing_box h3{ color: #fff; text-align: center; }
+.bg_showing .bg_line{ width: 150px; border-bottom: 1px solid #fff; transform: rotate(90deg); margin: 100px auto; }
+.bg_showing .bg_btn{ position: relative; border-radius: 20px; border: 1px solid #fff; width: 180px; height: 35px; margin: 105px auto; overflow: hidden; }
+.bg_showing .bg_btn .btneffect{ width: 178px; height: 34px; border-radius: 5px; background: #fff; position: absolute; top: 0; left: 0; transform: translate(-100%); transition: .3s; }
+.bg_showing .bg_btn:hover .btneffect{  transform: translate(0%); }
+.bg_showing .bg_btn a{ /* btn的文字設position是因為btnffect也有position會壓在文字上，故同時設定文字權重才會比色塊重 */
+    position: relative; color: #fff; line-height: 35px; padding: 0 54px; }
+.bg_showing .bg_btn:hover a{ color: rgb(202, 163, 105); z-index: 999; }
+.header .bg_img{ display: none; }
+.main{ width: 100%; }
+.main .brand{ width: 100%; }
+.brand_inner .row-brand{ width: 100%; height: 713px; display: flex; padding: 48px; }
+.row-brand .col-1{ position: relative; width: 50%; opacity: 1; overflow: hidden; }
 .brand_inner .row-brand .col-1 img{ display: none; }
 .brand_inner .row-brand .col-1{ background-image: url('../images/Tianzizi_img.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .brand_inner .row-brand .col-2-group .brand_img img{ display: none; }
-.brand_inner .row-brand .col-2-group .brand_title .title{
-    position:relative;
-    line-height:2em;
+.brand_inner .row-brand .col-2-group .brand_title .title{ 
+    position:relative; line-height:2em;
     /* height:10em;設定三倍行高 */
-    /* overflow:hidden;超過範圍隱藏 */
-}
-
-.row-brand .col-1:hover{
-    opacity: 0.7;
-    transition: all 0.3s;
-}
-.row-brand .col-1 .col-txt{
-    position: absolute;
-    width: 100%;
-    font-size: 2rem;
-    color: #fff;
-    top: 46%;
-    text-align: center;
-    opacity: 0;
-}
-.row-brand .col-1:hover .col-txt{
-    opacity: 1;
-    transition: all 0.3s;
-}
-.row-brand .col-2-group{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    height: 100%;
-    flex-wrap: wrap;
-    margin-left: 12px;
-}
-.col-2-group .col-2-1{
-    width: 49%;
-    height: 100%;
-}
+    /* overflow:hidden;超過範圍隱藏 */ }
+.row-brand .col-1:hover{ opacity: 0.7; transition: all 0.3s; }
+.row-brand .col-1 .col-txt{ position: absolute; width: 100%; font-size: 2rem; color: #fff; top: 46%; text-align: center; opacity: 0; }
+.row-brand .col-1:hover .col-txt{ opacity: 1; transition: all 0.3s; }
+.row-brand .col-2-group{ display: flex; justify-content: space-between; width: 50%; height: 100%; flex-wrap: wrap; margin-left: 12px; }
+.col-2-group .col-2-1{ width: 49%; height: 100%; }
 .col-2-group .biscuit{ background-image: url('../images/Tianzizi_img-02.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .col-2-group .cake{ background-image: url('../images/Tianzizi_img-03.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.col-2-group .biscuit:hover,
-.col-2-group .cake:hover{
-    opacity: 0.7;
-    transition: all 0.3s;
-}
-.col-2-group .brand_title{
-    display: flex; /* 為了對下層做水平置中須寫 */
-    color: #fff;
-    background-color: #D27575;
-    text-align: center;
-    padding: 46px;
-}
-.col-2-group .brand_title .title{
-    margin: 20px 0;
-     /*當想對多個物件的區塊設定水平置中時，可再父層寫flex子層寫margin:auto  */
-}
-.col-2-group .brand_title h2{
-    font-size: 3rem;
-    margin: 1rem auto;
-}
-.col-2-group .col-2-1 .biscuit,
-.col-2-group .col-2-1 .cake{
-    position: relative;
-    height: 49%;
-}
+.col-2-group .biscuit:hover, .col-2-group .cake:hover{ opacity: 0.7; transition: all 0.3s; }
+.col-2-group .brand_title{ display: flex; /* 為了對下層做水平置中須寫 */  color: #fff; background-color: #D27575; text-align: center; padding: 46px; }
+.col-2-group .brand_title .title{ margin: 20px 0; /*當想對多個物件的區塊設定水平置中時，可再父層寫flex子層寫margin:auto  */ }
+.col-2-group .brand_title h2{ font-size: 3rem; margin: 1rem auto; }
+.col-2-group .col-2-1 .biscuit, .col-2-group .col-2-1 .cake{ position: relative; height: 49%; }
 .col-2-group .col-2-1 .biscuit{ margin-bottom: 10px; }
-.col-2-1 .biscuit .biscuit-txt,
-.col-2-1 .cake .cake-txt{
-    position: absolute;
-    width: 100%;
-    font-size: 2rem;
-    color: #fff;
-    top: 45%;
-    opacity: 0;
-    text-align: center;
-}
-.col-2-1 .biscuit:hover .biscuit-txt,
-.col-2-1 .cake:hover .cake-txt{
-    opacity: 1;
-    transition: all 0.3s;
-}
-#service{
-    width: 100%;
-    background-color: #F1BDBD;
-}
+.col-2-1 .biscuit .biscuit-txt, .col-2-1 .cake .cake-txt{ position: absolute; width: 100%; font-size: 2rem; color: #fff; top: 45%; opacity: 0; text-align: center; }
+.col-2-1 .biscuit:hover .biscuit-txt, .col-2-1 .cake:hover .cake-txt{ opacity: 1; transition: all 0.3s; }
+#service{ width: 100%; background-color: #F1BDBD; }
 .service_inner{ padding: 90px 0; }
-.service_title{
-    width: 100%;
-    text-align: center;
-}
-.title_line{
-    width: 250px;
-    margin: auto;
-}
-.service_title h2{
-    color: #fff;
-    font-size: 3rem;
-}
-.service_inner .service_row{
-    display: flex;
-    justify-content: center;
-}
-.service_row .sweet-col-4-1{
-    width: 140px;
-    height: auto;
-    margin: 0 30px;
-}
-.service_row .sweet-col-4-1 h3{
-    font-family: 'ButterCookies';
-    font-size: 3rem;
-    color: #fff;
-    text-align: center;
-    margin-right: 10px;
-}
-#product{
-    width: 100%;
-}
-#product .product_inner{
-    width: 100%;
-    height: 1450px;
-    background-image: url('../images/image-from-rawpixel-id-2297916-jpeg.jpg');
-    background-size: cover;
-    background-position: center;
-}
-.product_mask{
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 1450px;
-}
-.product_mask .product_title{
-    width: 100%;
-    text-align: center;
-    padding-top: 90px;
-}
-.product_title h2{
-    color: #fff;
-    font-size: 3rem;
-}
-.product_row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.product_row .col-6-1{
-    width: 27%;
-    padding: 30px 20px;
-}
-.product_row .col-6-1 .cake_title{
-    width: 100%;
-    height: 150px;
-    background-color:rgb(255, 220, 220) ;
-    text-align: center;
-    padding: 40px 16px;
-}
-.col-6-1 .cake_title h5{
-    color: #D27575;
-    margin-top: 6px;
-}
-.footer{
-    width: 100%;
-}
-.footer .footer_inner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 138px;
-    position: relative;
-    background:#D27575;
-}
-.footer_inner .footer_group{
-    display: flex;
-    align-items: center;
-    left: 90px;
-    color: #fff;
-}
+.service_title{ width: 100%; text-align: center; }
+.title_line{ width: 250px; margin: auto; }
+.service_title h2{ color: #fff; font-size: 3rem; }
+.service_inner .service_row{ display: flex; justify-content: center; }
+.service_row .sweet-col-4-1{ width: 140px; height: auto; margin: 0 30px; }
+.service_row .sweet-col-4-1 h3{ font-family: 'ButterCookies'; font-size: 3rem; color: #fff; text-align: center; margin-right: 10px; }
+#product{ width: 100%; }
+#product .product_inner{ width: 100%; height: 1450px; background-image: url('../images/image-from-rawpixel-id-2297916-jpeg.jpg'); background-size: cover; background-position: center; }
+.product_mask{ background-color: rgba(0, 0, 0, 0.6); height: 1450px; }
+.product_mask .product_title{ width: 100%; text-align: center; padding-top: 90px; }
+.product_title h2{ color: #fff; font-size: 3rem; }
+.product_row{ display: flex; flex-wrap: wrap; justify-content: center; }
+.product_row .col-6-1{ width: 27%; padding: 30px 20px; }
+.product_row .col-6-1 .cake_title{ width: 100%; height: 150px; background-color:rgb(255, 220, 220); text-align: center; padding: 40px 16px; }
+.col-6-1 .cake_title h5{ color: #D27575; margin-top: 6px; }
+.footer{ width: 100%; }
+.footer .footer_inner{ display: flex; justify-content: center; align-items: center; width: 100%; height: 138px; position: relative; background:#D27575; }
+.footer_inner .footer_group{ display: flex; align-items: center; left: 90px; color: #fff; }
 .footer_copyright small{ font-family: 'Noto Sans TC'; font-size: 12px; color: #fff; }
-.footer_group .footer_title{
-    height: 24px; /* 控制title右邊線的高度 */
-    border-right: 1px solid #fff;
-    margin: auto;
-    padding-right: 12px;
-}
+.footer_group .footer_title{ height: 24px;  border-right: 1px solid #fff; margin: auto; padding-right: 12px; }
 .footer_group .footer_title h3{ font-size: 24px; }
 .footer_info a{ color: #fff; display: flex; align-items: center; }
 .footer_info .info p{ font-family: 'Noto Sans TC'; font-size: 12px; margin-left: 8px; }
