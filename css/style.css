@@ -1,5 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Noto+Sans+TC:wght@100;400&family=Open+Sans&display=swap');
+@font-face{
+    font-family: 'ButterCookies';
+    src:url('/fonts/ButterCookies.ttf')
+}
+@font-face{
+    font-family: 'Amiri-Regular';
+    src: url('/fonts/Amiri-Regular.ttf');
+}
 
 * {
     margin: 0;
@@ -7,7 +15,7 @@
     box-sizing: border-box; /* 不累加邊框與內距 */
 }
 html,body{
-    font-family: 'Amiri-Regular','Sinhala MN',Helvetica,Arial,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
+    font-family: 'Amiri-Regular',Helvetica,Arial,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
 }
 img{
     width: 100%; /* 自適應網頁大小 */
@@ -37,6 +45,7 @@ li{
     background-repeat: no-repeat;
     background-position: 50% 25%;
 }
+.header .bg_img{ display: none; }
 header .navbar{
     width: 100%;
     height: 80px;
@@ -152,20 +161,16 @@ nav .nav_info h5{
     opacity: 1;
     overflow: hidden;
 }
+.brand_inner .row-brand .col-1 img{ display: none; }
 .brand_inner .row-brand .col-1{ background-image: url('../images/Tianzizi_img.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.col-2-group .brand_title .title{
+.brand_inner .row-brand .col-2-group .brand_img img{ display: none; }
+.brand_inner .row-brand .col-2-group .brand_title .title{
     position:relative;
     line-height:2em;
     /* height:10em;設定三倍行高 */
     /* overflow:hidden;超過範圍隱藏 */
 }
-/* .col-2-group .brand_title .title::after{
-    content:"...";
-    position:absolute;
-    bottom:0;
-    right:0;
-    padding:0 20px 1px 0;
-} */
+
 .row-brand .col-1:hover{
     opacity: 0.7;
     transition: all 0.3s;
@@ -343,13 +348,6 @@ nav .nav_info h5{
 .footer_info a{ color: #fff; display: flex; align-items: center; }
 .footer_info .info p{ font-family: 'Noto Sans TC'; font-size: 12px; margin-left: 8px; }
 .info_icon p{ font-family: 'Noto Sans TC'; font-size: 12px; }
-.footer_box img{
-    width: 80px;
-    height: 80px;
-}
-.footer_box a{
-    padding-left: 16px;
-}
-.footer_box h3{
-    color: #fff;
-}
+.footer_box img{ width: 80px; height: 80px; }
+.footer_box a{ padding-left: 16px; }
+.footer_box h3{ color: #fff; }
