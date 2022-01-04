@@ -131,9 +131,9 @@
     .bg_showing{ margin-top: 5rem; }
     .showing_box h3{ font-family: 'Amiri-Regular'; font-size: 5vw; line-height: 7vw; margin-top: 10px; }
     .brand_inner .row-brand .col-1 .col-txt{ font-size: 6vw; }
-    .col-2-1 .biscuit .biscuit-txt{ font-size: 6vw; }
-    .col-2-1 .cake .cake-txt{ font-size: 6vw; }
-    .brand_inner .row-brand .col-2-group .brand_title .title{ margin: 2.5rem auto 2rem; }
+    .col-2-1 .biscuit .biscuit-txt{ font-size: 6vw; top: 40%; }
+    .col-2-1 .cake .cake-txt{ font-size: 6vw; top: 40%; }
+    .brand_inner .row-brand .col-2-group .brand_title .title{ margin: 2.5rem auto; }
     .brand_inner .row-brand .col-2-group .brand_title .title .txt_box{ width: 200px; }
     .col-2-group .brand_title h2{ font-size: 10vw; }
     .col-2-group .brand_title p{ width: 53%; }

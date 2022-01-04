@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Noto+Sans+TC:wght@100;400&family=Open+Sans&display=swap');
 @font-face{
     font-family: 'ButterCookies';
-    src:url('../fonts/ButterCookies.ttf')format("truetype");
+    src: url('../fonts/ButterCookies.ttf')format("truetype");
 }
 @font-face{
     font-family: 'Amiri-Regular';
@@ -270,7 +270,7 @@ nav .nav_info h5{
     margin: 0 30px;
 }
 .service_row .sweet-col-4-1 h3{
-    font-family: 'Butter Cookies';
+    font-family: 'ButterCookies';
     font-size: 3rem;
     color: #fff;
     text-align: center;
