@@ -129,7 +129,7 @@
     .nav_logo{ margin-left: 45px; }
     nav .hamburger{ margin-right: 50px; }
     .bg_showing{ margin-top: 5rem; }
-    .showing_box h3{ font-size: 5vw; line-height: 7vw; margin-top: 10px; }
+    .showing_box h3{ font-family: 'Amiri-Regular'; font-size: 5vw; line-height: 7vw; margin-top: 10px; }
     .brand_inner .row-brand .col-1 .col-txt{ font-size: 6vw; }
     .col-2-1 .biscuit .biscuit-txt{ font-size: 6vw; }
     .col-2-1 .cake .cake-txt{ font-size: 6vw; }
