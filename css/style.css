@@ -40,7 +40,7 @@ nav .hamburger .t2{ margin-top: 4px; }
 .showing_box h3{ color: #fff; text-align: center; }
 .bg_showing .bg_line{ width: 150px; border-bottom: 1px solid #fff; transform: rotate(90deg); margin: 100px auto; }
 .bg_showing .bg_btn{ position: relative; border-radius: 20px; border: 1px solid #fff; width: 180px; height: 35px; margin: 105px auto; overflow: hidden; }
-.bg_showing .bg_btn .btneffect{ width: 178px; height: 34px; border-radius: 5px; background: #fff; position: absolute; top: 0; left: 0; transform: translate(-100%); transition: .3s; }
+.bg_showing .bg_btn .btneffect{ width: 178px; height: 34px; border-radius: 25px; background: #fff; position: absolute; top: 0; left: 0; transform: translate(-100%); transition: .3s; }
 .bg_showing .bg_btn:hover .btneffect{  transform: translate(0%); }
 .bg_showing .bg_btn a{ /* btn的文字設position是因為btnffect也有position會壓在文字上，故同時設定文字權重才會比色塊重 */
     position: relative; color: #fff; line-height: 35px; padding: 0 54px; }
