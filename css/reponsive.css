@@ -130,7 +130,7 @@
     .footer_group .footer_title{ margin: 0; border-right: none; }
 }
 @media (max-width: 502px){
-    .nav_logo{ margin-left: 45px; }
+    nav .nav_logo{ margin-left: 40px; }
     nav .hamburger{ margin-right: 50px; }
     nav .nav_menu ul{ margin-top: 10rem; }
     nav .nav_menu ul li{ height: 90px; }
