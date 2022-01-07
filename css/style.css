@@ -34,6 +34,18 @@ nav .hamburger{ display: none; align-items: center; justify-content: center; fle
 nav .hamburger .t{ position: relative; width: 20px; height: 2px; margin: 0 auto; overflow: hidden; transform-origin: center center; }
 nav .hamburger .t:before, .hamburger .t:after{ content: ''; position:absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background: #fff; transition: all .5s .1s cubic-bezier(.19,1,.22,1); }
 nav .hamburger .t2{ margin-top: 4px; }
+#contact_box{ display: none; position: absolute; width: 800px; height: 600px; z-index: 999; background: #fff;  }
+#contact_box .container{ width: 100%; padding: 3rem; }
+#contact_box .container h2{ font-size: 1.5rem; font-weight: normal; text-align: center; letter-spacing: 1rem; }
+#contact_box .container form{ padding-left: 15px; margin-top: 2rem; }
+#contact_box .container form p{ font-family: 'Helvetica'; font-size: 13px; line-height: 2rem; margin-bottom: 20px; }
+#contact_box .container form p .submit{ color: #fff; background: #000; box-shadow: none; border-radius: 50px; padding: 5px; letter-spacing: 4px; }
+#contact_box .container form p input , #contact_box .container form p textarea{ width: 97%; background: #f8f8f8; border: none; border-radius: 2px; box-shadow: 0 0 1px #888; padding: 0 10px; }
+#contact_box .container form p label{ display: block; }
+#FormItemList .InfoItem{ display: inline-block; width: 49%; }
+#FormItemList .text_message{ width: 100%; }
+#closeBtn{ font-family: 'Helvetica'; position: absolute; right: 10px; top: 10px; cursor: pointer; }
+#greybackground{ background: #000; display: block; z-index: 100; width: 100%; position: absolute; top: 0; left: 0; }
 .bg_showing{ height: auto; margin-top: 8rem; }
 .showing_box{ width: 100%; margin: auto; }
 .showing_box img{ width: 100px; height: 100px; margin: auto; }

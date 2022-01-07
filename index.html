@@ -37,10 +37,45 @@
                             <li><a class="nav_border" href="#brand">BRAND</a></li>
                             <li><a class="nav_border" href="#service">SERVICE</a></li>
                             <li><a class="nav_border" href="#product">PRODUCT</a></li>
-                            <li><a class="nav_border" href="#contact">CONTACT</a></li>
+                            <li><a id="popup" class="nav_border" href="#contact">CONTACT</a></li>
                         </ul>
                     </div>
                     <div class="nav_info"><h5>ONLINE STORE</h5></div>
+                    <div id="contact_box">
+                        <div class="container">
+                            <span id="closeBtn">XX</span>
+                            <h2>訂購表單</h2>
+                            <form id="FormItemList" name="FormItemList" method="post">
+                                <div class="InfoItem">
+                                    <p>
+                                        <label for="name">姓名（必須）</label>
+                                        <input type="text" name="name" id="name" class="text" autofocus="autofocus" required="required" autocomplete="on" placeholder="Your Name" title="請輸入姓名" size="12">
+                                    </p>
+                                    <p>
+                                        <label for="email">Email（必須）</label>
+                                        <input type="email" name="email" id="email" class="text" placeholder="Your Email">
+                                    </p>
+                                </div>
+                                <div class="InfoItem">
+                                    <p>
+                                        <label for="tel">聯絡電話（必須）</label>
+                                        <input type="tel" name="tel" id="tel" class="text" placeholder="Your Number">
+                                    </p>
+                                    <p>
+                                        <label for="date">日期（必須）</label>
+                                        <input type="date" name="date" id="date" class="text" placeholder="Order Date">
+                                    </p>
+                                </div>
+                                    <p>
+                                        <label for="message">信息內容</label>
+                                        <textarea name="message" cols="50" rows="5" id="message" class="text_message" placeholder="Your Message"></textarea>
+                                    </p>
+                                <p>
+                                    <input type="submit" name="submit" id="submit" class="submit" value="送信">
+                                  </p>
+                            </form>
+                        </div>
+                    </div>
                 </nav>
                  <!-- 主畫布區 -->
                  <div class="bg_showing">
@@ -188,7 +223,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- smoove js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
-
+    <!-- popup視窗 自訂js -->
+    <script src="./js/popup.js"></script>
     <!-- smoove選項 -->
     <script>
         $('.smoove').smoove({
@@ -205,7 +241,7 @@
             isMenuOpen = !isMenuOpen
             isMenuOpen ? icon.classList.add('open') : icon.classList.remove('open')
         })
-        })
+        });
 
     </script>
 
