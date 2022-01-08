@@ -113,13 +113,13 @@
     .service_row .sweet-col-4-1 h3{ font-size: 4rem; line-height: 2.5rem; margin-right: 20px; }
     .product_title h2{ font-size: 4rem; margin: 1rem auto 2rem; }
     .product_row{ max-width: 90%;margin: auto; }
-    .product_row .col-6-1{ width: 40%; padding: 30px 10px; }
+    .product_row .col-6-1{ width: 40%; margin: 30px 15px; padding: 30px 10px; }
     .product_row .col-6-1 .cake_title{ height: auto; }
     .product_row .col-6-1 .cake_title h4{ font-size: 16px; }
     .product_row .col-6-1 .cake_title p{ font-size: 12px; padding-bottom: 5px; }
     .product_row .col-6-1 .cake_title h5{ font-size: 14px; }
-    #product .product_inner{ height: 1870px; }
-    .product_mask{ height: 1870px; }
+    #product .product_inner{ height: 1920px; }
+    .product_mask{ height: 1920px; }
     .footer .footer_inner{ height: 182px; }
     .footer_inner .footer_group{ display: flex; flex-direction: column; position: static; margin: 30px 14px 18px 28px; }
     .footer_box{ flex-direction: column; top: 34px; right: 36px; }
@@ -155,6 +155,7 @@
     .service_inner .service_row .sweet-col-4-1{ width: 120px; }
     .service_row .sweet-col-4-1 h3{ font-size: 11vw; }
     .product_title h2{ font-size: 10vw; }
+    .product_row .col-6-1{ margin: 0; padding: 30px 20px; }
     .product_row .col-6-1 .cake_title{ padding: 28px 0 24px; }
     .product_row .col-6-1 .cake_title h4{ font-size: 14px; }
     .product_row .col-6-1 .cake_title p{ padding-bottom: 0; }
@@ -177,8 +178,8 @@
     .service_inner{ padding: 100px 20px; }
     .service_row .sweet-col-4-1 h3{ margin-left: 8px; }
     .product_row .col-6-1 .cake_title{ padding: 26px 0 16px; }
-    #product .product_inner{ height: 1280px; }
-    .product_mask{ height: 1280px; }  
+    #product .product_inner{ height: 1150px; }
+    .product_mask{ height: 1150px; }  
 }
 @media (max-width: 375px){
     nav .nav_logo{ margin-left: 45px; }
